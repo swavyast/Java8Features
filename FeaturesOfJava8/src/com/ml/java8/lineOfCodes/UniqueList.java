@@ -23,7 +23,8 @@ public class UniqueList {
 		//after java 8
 		
 		list3 = list1.stream().distinct().collect(Collectors.toList());
-		System.out.println("Unique list of names using java8 : "+list3);
+		System.out.println("Unique list of 'names' using java8 : "+list3);
+		list3.stream().distinct().forEach((i)->System.out.println("name : "+i));
 		
 	}
 
